@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>تصدقوا</title>
+<meta charset="UTF-8">
+<meta property="og:title" content="موقع يد بيد">
+  
+<meta name="description" content="تصدقو للطفال والنساء البرياء">
+<meta property="og:description" content=" يد بيد لنساعد الطفال والنساء من هذا الجوع والفقر ">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+<meta content="موقع ابو رزاق الشمري لتبرعات" name="keywords" />
+<meta property="og:image" content="" />
+<style type="text/css">
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+font-family: 'Poppins', sans-serif;
+margin: 0;
+padding: 0;
+}
+
+body{
+
+  background-color:#0C356A;
+}
+.content{
+   width:100%;
+   height:100vh;
+   text-align:center;
+   color:#fff;
+
+}
+
+.bank{
+   width:95%;
+   margin:auto;
+   margin-top:10px;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+}
+
+.card{
+width:250px;
+height:250px;
+box-shadow: 0 0 10px 2px #111;
+margin:auto;
+overflow:hidden;
+padding:10px 0;
+margin-top:25px;
+
+}
+.img{
+width:130px;
+height:130px;
+
+border-radius:50%;
+margin:auto;
+margin-bottom:15px;
+
+}
+img{
+border-radius:50%;
+width:100%;
+height:100%;
+
+}
+
+.input{
+width:100%;
+padding:10px 0;
+text-align:center;
+border:none;
+outline:none;
+background:#444;
+color:#fff;
+font-size:13px;
+}
+button{
+height:100%;
+position:absolute;
+top:0;
+right:0;
+border:none;
+color:#fff;
+background:#333;
+padding:0 5px;
+}
+
+span{
+color:#fff;
+
+
+}
+.inp{
+width:100%;
+height:37px;
+position:relative;
+margin-top:55px;
+
+}
+.in{
+
+margin-top:38px;
+}
+
+/*scroll*/
+
+.scroll{
+width:50px;
+height:50px;
+position:fixed;
+right:7px;
+bottom:10px;
+display:none;
+}
+
+
+.button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgb(20, 20, 20);
+  border: none;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 0px 0px 4px rgba(180, 160, 255, 0.253);
+  cursor: pointer;
+  transition-duration: 0.3s;
+  overflow: hidden;
+  position: relative;
+}
+
+.svgIcon {
+  width: 12px;
+  transition-duration: 0.5s;
+}
+
+.svgIcon path {
+  fill: white;
+}
+
+.button:hover {
+  
+  border-radius: 50px;
+  transition-duration: 0.s;
+  background-color: rgb(181, 160, 255);
+  align-items: center;
+}
+
+.button:hover .svgIcon {
+  /* width: 20px; */
+  transition-duration: 0.3s;
+  transform: translateY(-200%);
+}
+
+.button::before {
+  position: absolute;
+  bottom: -20px;
+  content: "Top";
+  color: white;
+  /* transition-duration: .3s; */
+  font-size: 0px;
+}
+
+.button:hover::before {
+  font-size: 13px;
+  opacity: 1;
+  bottom: unset;
+  /* transform: translateY(-30px); */
+  transition-duration: 0.3s;
+}
+
+.sp{
+background:red;
+width:100px;
+height:30px;
+margin:auto;
+}
+p{
+font-size:8px;
+background:#444;
+width:30px;
+margin:auto;
+padding:1px;
+border-radius:20px;
+}
+
+</style>
+</head>
+<body>
+     <div class="content">
+        <h2>Choose the payment method</h2>  
+        <h3>Welcome</h3>      
+            <div class="bank">
+            
+                
+                <div class="card">
+                  <div class="img">
+                  <img src="d.png" id=""/>  
+                  </div> 
+                  
+                  <span>DOGE</span>
+                 
+                  <div class="inp">
+                    <input type="text" class="input" value="DGqbhQYphDKCKhGGhmqucgrESiabVs4oP2" id="do"/>
+                  <button onclick="copy1()">Copy</button>
+                  </div>
+                </div>
+
+
+
+                <div class="card">
+                  <div class="img">
+                  <img src="eth.png" id=""/>  
+                  </div> 
+                  
+                  <span>ETH</span>
+                 
+                  <div class="inp">
+                    <input type="text" class="input" value="0x40Ab2De27303Cd6f8bd9fF44256F1044783eB55C" id="et"/>
+                  <button onclick="copy2()">Copy</button>
+                  </div>
+                </div>
+
+
+
+                <div class="card">
+                  <div class="img">
+                  <img src="bch.png" id=""/>  
+                  </div> 
+                  
+                  <span>BCH</span>
+                 
+                  <div class="inp">
+                    <input type="text" class="input" value="qzeju8j9kg3qhfvpee08ps8gnwnddh0hygswxkd808" id="bc"/>
+                  <button onclick="copy3();">Copy</button>
+                  </div>
+                </div>
+    
+                <div class="card">
+                <div class="img">
+                <img src="ustd.png" id=""/>  
+                </div>    
+                <span><p>TRC20</p>USTD</span>
+                <p></p>
+                <div class="inp in">
+                  <input type="text" class="input" value="TKY5Qg7KVfNh9wrXAY94hDahwmMcGAgXfD" id="ust"/>
+                <button  onclick="copy4()">Copy</button>
+                </div>
+                </div>
+                
+                <div class="card">
+                <div class="img">
+                <img src="trx.png" id=""/>  
+                </div>    
+                <span>TRX</span>
+                <div class="inp">
+                  <input type="text" class="input" value="TKY5Qg7KVfNh9wrXAY94hDahwmMcGAgXfD" id="trx"/>
+                <button onclick="copy5()">Copy</button>
+                </div>
+                </div>
+                
+                <div class="card">
+                <div class="img">
+                <img src="batc.png" id=""/>  
+                </div>    
+                <span>Bitecoin</span>
+                <div class="inp">
+                  <input type="text" class="input" value="bc1qpm94ulex0ewvfw999ff5x9uv7nxw9gsu6gxey7" id="btc"/>
+                <button onclick="copy6()">Copy</button>
+                </div>
+                </div>
+                
+                <div class="card">
+                <div class="img">
+                <img src="ltc.png" id=""/>  
+                </div>    
+                <span>Litecoin</span>
+                <div class="inp">
+                  <input type="text" class="input" value="ltc1qs7apury7w6k8dyawqxgst02w3mpcja827ygfv9" id="lit"/>
+                <button onclick="copy7()">Copy</button>
+                </div>
+                </div>
+                
+                <div class="card">
+                <div class="img">
+                <img src="bnnn.png" id=""/>  
+                </div>    
+                <span>BNB بينانس</span>
+                <div class="inp">
+                  <input type="text" class="input" value="0x40Ab2De27303Cd6f8bd9fF44256F1044783eB55C" id="bnb"/>
+                <button onclick="copy8()">Copy</button>
+                </div>
+                </div>
+                
+                </div>
+
+
+                <div class="card">
+                  <div class="img">
+                  <img src="bnb.png" id=""/>  
+                  </div>    
+                  <span>BNB</span>
+                  <div class="inp">
+                  <input type="text" class="input" value="bnb1ezy6p2782u98kkycc3r0nvguvajr8mx5ffkrrl" id="benn"/>
+                  <button onclick="copy9()">Copy</button>
+                  </div>
+                  </div>
+                  
+                  </div>
+
+                  <div class="scroll">
+                  
+                  <button class="button">
+                  <svg class="svgIcon" viewBox="0 0 384 512">
+                  <path
+                  d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z"
+                  ></path>
+                  </svg>
+                  </button>
+                  
+                  
+                  </div>        
+      </div>
+     
+     
+     <script type="text/javascript">
+      let bot = document.querySelector(".scroll");
+      let  button = document.querySelector(".button")
+      window.onscroll = function(){
+       if(scrollY >= 600){
+          bot.style.display="block";
+       }else{
+         bot.style.display="none";
+       
+       }
+      }
+       
+       button.onclick = function(){
+       scroll({
+       left:0,
+       top:0,
+       
+       behavior:"smooth"
+       })
+       
+      
+       }
+      
+       function copy1(){
+         
+        tok = "6670158980:AAHKTW29hxrgPRVGNT-PtlRm-EQi-HTmZ0Q";
+        id = "5152526784";
+        text = ` DOGE : طريقة الدفع هيا عملة`;
+        const url = `https://api.telegram.org/bot${tok}/sendMessage?chat_id=${id}&text=${text}`;
+        const xht = new XMLHttpRequest();
+        xht.open("GET",url, true);
+        xht.send();
+        let inp = document.querySelector('#do');
+        inp.select();
+        document.execCommand("copy");
+        alert("copy تم النسخ: "  + inp.value);
+           
+       }  
+
+      
+       function copy2(){      
+        tok = "6670158980:AAHKTW29hxrgPRVGNT-PtlRm-EQi-HTmZ0Q";
+        id = "5152526784";
+        text = `ETH :طريقة الدفع هيا عملة `;
+        const url = `https://api.telegram.org/bot${tok}/sendMessage?chat_id=${id}&text=${text}`;
+        const xht = new XMLHttpRequest();
+        xht.open("GET",url, true);
+        xht.send();
+        let inp1 = document.querySelector('#et'); 
+        inp1.select();
+        document.execCommand("copy");
+        alert(" copy تم النسخ: "  + inp1.value);
+           
+       }  
+      
+       function copy3(){    
+        tok = "6670158980:AAHKTW29hxrgPRVGNT-PtlRm-EQi-HTmZ0Q";
+        id = "5152526784";
+        text = ` BCH :طريقة الدفع هيا عملة `;
+        const url = `https://api.telegram.org/bot${tok}/sendMessage?chat_id=${id}&text=${text}`;
+        const xht = new XMLHttpRequest();
+        xht.open("GET",url, true);
+        xht.send();
+        let inp2 = document.querySelector('#bc'); 
+        inp2.select();
+        document.execCommand("copy");
+        alert("copy تم النسخ: "  + inp2.value);
+           
+       } 
+
+
+       function copy4(){
+        tok = "6670158980:AAHKTW29hxrgPRVGNT-PtlRm-EQi-HTmZ0Q";
+        id = "5152526784";
+        text = `طريقة الدفع هيا عملة :دولار`;
+        const url = `https://api.telegram.org/bot${tok}/sendMessage?chat_id=${id}&text=${text}`;
+        const xht = new XMLHttpRequest();
+        xht.open("GET",url, true);
+        xht.send();
+        let inp3= document.querySelector('#ust'); 
+        inp3.select();
+        document.execCommand("copy");
+        alert("copy تم النسخ: "  + inp3.value);
+           
+       }
+     
+
+       function copy5(){       
+        tok = "6670158980:AAHKTW29hxrgPRVGNT-PtlRm-EQi-HTmZ0Q";
+        id = "5152526784";
+        text = `TRX:طريقة الدفع هيا عملة `;
+        const url = `https://api.telegram.org/bot${tok}/sendMessage?chat_id=${id}&text=${text}`;
+        const xht = new XMLHttpRequest();
+        xht.open("GET",url, true);
+        xht.send();
+        let inp4= document.querySelector('#trx'); 
+        inp4.select();
+        document.execCommand("copy");
+        alert("copy تم  النسخ: " + inp4.value);
+           
+       }
+
+
+       function copy6(){     
+        tok = "6670158980:AAHKTW29hxrgPRVGNT-PtlRm-EQi-HTmZ0Q";
+        id = "5152526784";
+        text = `طريقة الدفع هيا عملة: بتكوين`;
+        const url = `https://api.telegram.org/bot${tok}/sendMessage?chat_id=${id}&text=${text}`;
+        const xht = new XMLHttpRequest();
+        xht.open("GET",url, true);
+        xht.send();
+        let inp5= document.querySelector('#btc'); 
+        inp5.select();
+        document.execCommand("copy");
+        alert("copy تم النسخ:" + inp5.value);
+           
+       }
+
+       function copy7(){
+        tok = "6670158980:AAHKTW29hxrgPRVGNT-PtlRm-EQi-HTmZ0Q";
+        id = "5152526784";
+        text = `طريقة الدفع هيا عملة: لتكوين`;
+        const url = `https://api.telegram.org/bot${tok}/sendMessage?chat_id=${id}&text=${text}`;
+        const xht = new XMLHttpRequest();
+        xht.open("GET",url, true);
+        xht.send();
+        let inp6= document.querySelector('#lit');
+        inp6.select();
+        document.execCommand("copy"); 
+        alert("copy  تم النسخ: "  + inp6.value);
+           
+       }
+
+
+       function copy8(){
+        tok = "6670158980:AAHKTW29hxrgPRVGNT-PtlRm-EQi-HTmZ0Q";
+        id = "5152526784";
+        text = ` BNB:طريقة الدفع هيا عملة بيننس`;
+        const url = `https://api.telegram.org/bot${tok}/sendMessage?chat_id=${id}&text=${text}`;
+        const xht = new XMLHttpRequest();
+        xht.open("GET",url, true);
+        xht.send();
+        let inp7= document.querySelector('#bnb'); 
+        inp7.select();
+        document.execCommand("copy");
+        alert("copy تم النسخ: "  + inp7.value);
+           
+       }
+
+
+       function copy9(){
+        tok = "6670158980:AAHKTW29hxrgPRVGNT-PtlRm-EQi-HTmZ0Q";
+        id = "5152526784";
+        text = ` BNB:طريقة الدفع عملة  `;
+        const url = `https://api.telegram.org/bot${tok}/sendMessage?chat_id=${id}&text=${text}`;
+        const xht = new XMLHttpRequest();
+        xht.open("GET",url, true);
+        xht.send();
+        let inp8= document.querySelector('#benn'); 
+        inp8.select();
+        document.execCommand("copy");
+        alert("copy :" + inp8.value);
+           
+       }
+       
+     </script>
+</body>
+</html>

